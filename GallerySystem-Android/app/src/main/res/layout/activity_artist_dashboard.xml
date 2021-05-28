@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArtistDashboardActivity">
+
+    <Button
+        android:id="@+id/uploadArtpiece"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Artpiece"
+        android:onClick="artistGoAddArtpiece"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/manageProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="artistGoManageProfile"
+        android:text="Manage Profile"
+        app:layout_constraintEnd_toEndOf="@+id/uploadArtpiece"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/uploadArtpiece"
+        app:layout_constraintTop_toBottomOf="@+id/uploadArtpiece" />
+
+    <Button
+        android:id="@+id/manageArtpiece"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="artistGoManageArtpiece"
+        android:text="Manage Artpiece"
+        app:layout_constraintEnd_toEndOf="@+id/manageProfile"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="@+id/manageProfile"
+        app:layout_constraintTop_toBottomOf="@+id/manageProfile" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Log Out"
+        android:background="@color/design_default_color_secondary_variant"
+        android:textColor="@color/white"
+        android:onClick="artistLogout"
+        app:layout_constraintEnd_toEndOf="@+id/manageArtpiece"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/manageArtpiece"
+        app:layout_constraintTop_toBottomOf="@+id/manageArtpiece" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
